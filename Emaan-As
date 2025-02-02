@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emaan AS - Jewelry</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #fafafa;
+      color: #333;
+      font-size: 12px;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-left: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    .hero {
+      position: relative;
+      color: white;
+      padding: 50px 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.pinimg.com/736x/07/df/a1/07dfa16df91d03aa62037833eeee4470.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(2px);
+      z-index: -1;
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 1;
+    }
+
+   
+    #products {
+      padding: 20px 10px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    #products h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+
+    .order-now {
+      display: inline-block;
+      background-color: #d4af37;
+      color: #fff;
+      padding: 8px 15px;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .order-now:hover {
+      background-color: #b08827;
+      transform: translateY(-2px);
+    }
+
+    .order-now:active {
+      transform: translateY(2px);
+    }
+
+    #about {
+      background-color: #f4f4f4;
+      padding: 40px 10px;
+      text-align: center;
+    }
+
+    #about p {
+      font-size: 14px;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    #contact {
+      background-color: #fff;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #contact input,
+    #contact textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px;
+      font-size: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contact button {
+      background-color: #d4af37;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Emaan AS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="window.location.reload();">Home</a></li>
+        <li><a href="about.html" target="_blank">About Us</a></li>
+        <li><a href="https://wa.me/message/B2RH6BWIWTECF" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Discover Elegance</h2>
+      <p>Explore our exquisite jewelry collection, designed to shine with you.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Our Collection</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="https://i.ibb.co/M5Prmjms/Double-sided-golden-heart-pendant-Dm-to-order-now-minimaljewelry-daily-gemstones-jewellery-minimalst.jpg" alt="Gold Necklace">
+        <h3>Gold Necklace</h3>
+        <p>Rs.399</p>
+        <a href="https://wa.me/message/B2RH6BWIWTECF?text=I%20want%20to%20order%20the%20Gold%20Necklace%20which%20costs%20Rs.399"
+          class="order-now">
+          Order Now
+        </a>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/M5Prmjms/Double-sided-golden-heart-pendant-Dm-to-order-now-minimaljewelry-daily-gemstones-jewellery-minimalst.jpg" alt="Diamond Earrings">
+        <h3>Diamond Earrings</h3>
+        <p>Rs.399</p>
+        <a href="https://wa.me/message/B2RH6BWIWTECF?text=I%20want%20to%20order%20the%20Diamond%20Earrings%20which%20costs%20Rs.399"
+          class="order-now">
+          Order Now
+        </a>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/M5Prmjms/Double-sided-golden-heart-pendant-Dm-to-order-now-minimaljewelry-daily-gemstones-jewellery-minimalst.jpg" alt="Platinum Ring">
+        <h3>Platinum Ring</h3>
+        <p>Rs.399</p>
+        <a href="https://wa.me/message/B2RH6BWIWTECF?text=I%20want%20to%20order%20the%20Platinum%20Ring%20which%20costs%20Rs.399"
+          class="order-now">
+          Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Emaan AS Jewelry, we combine craftsmanship, elegance, and timeless beauty. Our pieces are designed to make
+      every moment special.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Emaan AS Jewelry. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
